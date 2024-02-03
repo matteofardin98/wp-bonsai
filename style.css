@@ -74,6 +74,10 @@ body {
     padding: 70px 0;
 }
 
+.block-10 {
+    height: 10px;
+}
+
 .block-15 {
     height: 15px;
 }
@@ -129,6 +133,15 @@ h2 {
     font-size: 28px;
     font-weight: 700;
     color: var(--dark);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--primary);
+    transition: 0.3s;
+    transform: translateY(0);
 }
 
 p {
@@ -333,11 +346,90 @@ nav li a:hover {
     display: block;
     width: 80px;
     height: 2px;
-    border-radius: 10px;
+    
     background-color: var(--secondary);
     margin: 15px 0;
 }
 
+/* BLOG */
+
+h3:hover {
+    color: #AFF275;
+    transform: translateY(-3px);
+}
+
+.blog .line {
+    margin: 15px auto 50px auto;
+}
+
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 31%;
+    background-color: var(--white);
+    box-shadow: 0 4px 30px rgba(34, 34, 34, .25);
+}
+
+.card img {
+    width: 100%;
+}
+
+.view {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.view img {
+    transform: scale(1);
+    transition: all 0.2s linear;
+}
+
+.view img:hover {
+    transform: scale(1.1);
+}
+
+.title-card {
+    padding: 20px;
+}
+
+.info-blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-blog i {
+font-size: 15px;
+transition: 0.3s;
+}
+
+.info-blog a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.info-blog i:hover,
+.info-blog a:hover {
+    color: var(--secondary);
+}
+
+
+
+.info-blog span {
+    color: var(--secondary);
+}
+
+.title-card p {
+    font-size: 14px;
+}
 /* FOOTER */
 
 footer {
@@ -380,6 +472,8 @@ footer a:hover {
         margin: 0 2%;
         width: 96%;
     }
+
+
 }
 
 /* Tablet 2.0 */
@@ -393,6 +487,14 @@ footer a:hover {
     .flex-bonsai .center-col {
         align-items: center;
         text-align: center;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .flex-card:last-child {
+        margin-bottom: 0;
     }
 }
 
