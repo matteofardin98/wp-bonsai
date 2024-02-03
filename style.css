@@ -82,6 +82,10 @@ body {
     height: 15px;
 }
 
+.block-40 {
+    height: 40px;
+}
+
 .center {
     text-align: center;
 }
@@ -430,6 +434,55 @@ transition: 0.3s;
 .title-card p {
     font-size: 14px;
 }
+
+/* Page Hero */
+.page-hero {
+    padding: 192px 0 86px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(img/hero.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.page-hero .line {
+    margin: 15px auto 15px auto;
+
+}
+
+.page-hero a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 300;
+    transition: .3s;
+    letter-spacing: 2px;
+}
+
+.page-hero a:hover {
+    color: var(--white);
+}
+
+.page-hero .page {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
+/* 404 */
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error h2 {
+    color: var(--primary);
+}
+
+
 /* FOOTER */
 
 footer {
