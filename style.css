@@ -376,6 +376,7 @@ h3:hover {
     width: 31%;
     background-color: var(--white);
     box-shadow: 0 4px 30px rgba(34, 34, 34, .25);
+    margin-bottom: 40px;
 }
 
 .card img {
@@ -467,6 +468,38 @@ transition: 0.3s;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+/* BLOG */
+.nav-links {
+    text-align: center;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 12px 17px;
+    border: 1px solid var(--secondary);
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 14px;
+    margin-right: 10px;
+    transform: translateY(0);
+    transition: .3s;
+}
+
+.dots {
+    display: inline-block;
+    padding: 12px 17px;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.page-number:hover {
+    color: var(--white);
+    background-color: var(--secondary);
+    transform: translateY(-3px);
 }
 
 
