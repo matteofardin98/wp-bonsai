@@ -9,6 +9,7 @@
     <meta name="description" content="L'arte del bonsai, questo e molto altro">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="icon" href="img/favicon.png">
 </head>
 
@@ -57,7 +58,7 @@
         <section>
             <div class="hero-section">
                 <div class="content">
-                    <div class="hs-main">
+                    <div class="hs-main fade">
                         <h1>Fardin Bonsai</h1>
                         <span class="title">Arte in miniatura: alberi curati con maestria per bellezza eterna.</span>
                         <a href="#" class="button">Call to action</a>
@@ -72,10 +73,10 @@
                 <div class="flex-bonsai">
                     <div class="col-6">
                         <figure>
-                            <img src="img/bonsai-1.jpg" alt="Bonsai" width="580" height="350">
+                            <img src="img/bonsai-1.jpg" alt="Bonsai" width="580" height="350" class="fade">
                         </figure>
                     </div> <!-- end col- 6 -->
-                    <div class="col-6 center-col">
+                    <div class="col-6 center-col fade">
                         <h2>L'arte del bonsai</h2>
                         <span class="line"></span>
                         <p>L'<strong>arte dei bonsai</strong> incanta con la sua <strong>precisione</strong> e
@@ -95,10 +96,10 @@
         <article>
             <div class="blog">
                 <div class="content spacer">
-                    <h2 class="center">Ultime dal blog</h2>
-                    <span class="line"></span>
+                    <h2 class="center fade">Ultime dal blog</h2>
+                    <span class="line fade"></span>
                     <div class="flex-card">
-                        <div class="card col-4">
+                        <div class="card col-4 fade">
                             <div class="card-img view">
                                 <a href="#" title="Bonsia">
                                     <img src="img/bonsai-blog.jpg" alt="Bonsai" width="373" height="230">
@@ -121,7 +122,7 @@
                                     modellatura...</p>
                             </div> <!-- end title-card -->
                         </div> <!-- end card -->
-                        <div class="card col-4">
+                        <div class="card col-4 fade">
                             <div class="card-img view">
                                 <a href="#" title="Bonsia">
                                     <img src="img/bonsai-blog.jpg" alt="Bonsai" width="373" height="230">
@@ -144,7 +145,7 @@
                                     modellatura...</p>
                             </div> <!-- end title-card -->
                         </div> <!-- end card -->
-                        <div class="card col-4" style="margin-bottom: 0;">
+                        <div class="card col-4 fade">
                             <div class="card-img view">
                                 <a href="#" title="Bonsia">
                                     <img src="img/bonsai-blog.jpg" alt="Bonsai" width="373" height="230">
@@ -167,13 +168,14 @@
                                     modellatura...</p>
                             </div> <!-- end title-card -->
                         </div> <!-- end card -->
+                        
                     </div> <!-- end flex-card-->
                 </div> <!-- end content -->
             </div> <!-- end blog -->
         </article>
     </main>
 
-    <footer>
+    <footer class="fade">
         <div class="content divider center">
             <p>Matteo Fardin. Fardin Bonsai - Sito a scopo didattico - <a href="#" title="Privacy Policy">Privacy
                     Policy</a></p>
@@ -199,6 +201,7 @@
     <!-- Scipt -->
     <script src="js/jquery.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/viewportchecker.js"></script>
 
 </body>
 

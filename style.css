@@ -280,6 +280,10 @@ nav li a:hover {
     box-shadow: 0 3px 12px #000000;
 }
 
+.scroll-top a:hover {
+    color: var(--primary) !important;
+}
+
 /* Hero Section */
 
 .hero-section {
@@ -462,6 +466,8 @@ transition: 0.3s;
 .page-hero a:hover {
     color: var(--white);
 }
+
+
 
 .page-hero .page {
     color: var(--white);
