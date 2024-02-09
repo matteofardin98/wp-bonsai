@@ -24,6 +24,12 @@ $(document).ready(function () {
             }
         });
 
+        // Fade
+        $('.fade') .addClass("hidden") .viewportChecker({ 
+            classToAdd: 'visible animate__animated animate__fadeIn', 
+            offset: 100 
+        });
+
 });
 
 // Burger Transition in JavaScript
