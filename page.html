@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>Page</title>
     <meta name="author" content="Matteo Fardin">
     <meta name="description" content="Errore 404, pagina non trovata">
     <link rel="stylesheet" href="style.css">
@@ -27,10 +27,10 @@
                 <nav>
                     <ul>
                         <li><a href="index.html" title="Home">Home</a></li>
-                        <li><a href="page.html" title="Page">Page</a></li>
+                        <li class="current"><a href="page.html" title="Page">Page</a></li>
                         <li><a href="blog.html" title="Blog">Blog</a></li>
                         <li><a href="#" title="Single">Single</a></li>
-                        <li class="current" style="padding-right: 0;"><a href="404.html" title="404">404</a></li>
+                        <li style="padding-right: 0;"><a href="404.html" title="404">404</a></li>
                     </ul>
                 </nav> <!-- end nav -->
 
@@ -54,9 +54,9 @@
 
     <div class="page-hero">
         <div class="content center fade">
-            <h1>404 Page not found</h1>
+            <h1>Simple Page</h1>
             <span class="line"></span>
-            <span class="page"><a href="index.html" title="home">Home</a> / 404 Page not found</span>
+            <span class="page"><a href="index.html" title="home">Home</a> / Simple Page</span>
         </div> <!-- end center -->
 
         <!-- Scroll-top button -->
@@ -65,22 +65,31 @@
                 <i class="fa fa-arrow-up" aria-hidden="true"></i>
             </a>
         </div> <!-- scroll-top -->
-
     </div> <!-- end page-hero -->
 
     <section>
-        <div class="content" style="padding: 100px 0;">
-            <div class="error fade">
-                <h2>Ops! Pagina non trovata</h2>
-                <div class="block-40"></div>
-                <p class="center">La pagina che stai cercando non esiste o è stata rimossa, torna alla home cliccando il pulsante di seguito per entrare nel sito.</p>
-                <div class="block-40"></div>
-                <a href="index.html" title="Home" class="button">Home</a>
-            </div>
+        <div class="content spacer">
+            <figure>
+                <img src="img/page.jpg" alt="Bonsia" width="1160" height="640" class="fade">
+            </figure>
+            <div class="block-40"></div>
+            <h2>Heading</h2>
+            <div class="block-15"></div>
+            <h3>Heading</h3>
+            <div class="block-15"></div>
+            <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. A rerum, velit nam, et quae eum quasi quaerat tenetur maxime tempora debitis? At labore in maiores reprehenderit quae ducimus dolorem rerum.</p>
+            <div class="block-15"></div>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus consequatur, deserunt assumenda laborum aperiam repudiandae veniam alias natus iste officia a laudantium quod eveniet dignissimos magni, voluptatum rem perspiciatis culpa?</p>
+            </blockquote>
+            <div class="block-15"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A rerum, velit nam, et quae eum quasi quaerat tenetur maxime tempora debitis? At labore in maiores <a href="#" title="Link">reprehenderit</a> quae ducimus dolorem rerum.</p>
+            <div class="block-15"></div>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus consequatur, deserunt assumenda laborum aperiam repudiandae veniam alias natus iste officia a laudantium quod eveniet dignissimos magni, voluptatum rem perspiciatis culpa?</p>
+            </blockquote>
         </div>
     </section>
-
-
 
     <footer class="fade">
         <div class="content divider center">

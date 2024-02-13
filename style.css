@@ -1,25 +1,33 @@
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/nunito-v26-latin-300.woff2') format('woff2'); 
+    src: url('../fonts/nunito-v26-latin-300.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/nunito-v26-latin-500.woff2') format('woff2'); 
+    src: url('../fonts/nunito-v26-latin-500.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/nunito-v26-latin-700.woff2') format('woff2'); 
+    src: url('../fonts/nunito-v26-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/nunito-v26-latin-italic.woff2') format('woff2');
 }
 
 :root {
@@ -53,6 +61,7 @@ img {
 input,
 select,
 textarea,
+li,
 body {
     font-family: 'Nunito', sans-serif;
 }
@@ -142,10 +151,41 @@ h2 {
 
 h3 {
     font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+    transition: 0.3s;
+    transform: translateY(0);
+}
+
+.blog h3 {
+    font-size: 22px;
     font-weight: 500;
+    text-transform: none;
     color: var(--primary);
     transition: 0.3s;
     transform: translateY(0);
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
 }
 
 p {
@@ -155,6 +195,43 @@ p {
     word-spacing: 1px;
     letter-spacing: 1px;
     line-height: 25px;
+}
+
+strong {
+    color: var(--dark);
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid var(--secondary);
+    padding: 0 30px;
+}
+
+blockquote p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+ul {
+    list-style: inside;
+}
+
+ul li {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 24px;
 }
 
 /** Global Style **/
@@ -184,7 +261,7 @@ header {
     align-items: center;
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
@@ -196,7 +273,7 @@ header {
 }
 
 .current>a {
-    color:var(--primary)
+    color: var(--primary)
 }
 
 
@@ -229,7 +306,7 @@ nav li a:hover {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;                                                                                                  
+    cursor: pointer;
 }
 
 .burger-line {
@@ -354,14 +431,14 @@ nav li a:hover {
     display: block;
     width: 80px;
     height: 2px;
-    
+
     background-color: var(--secondary);
     margin: 15px 0;
 }
 
 /* BLOG */
 
-h3:hover {
+.blog h3:hover {
     color: #AFF275;
     transform: translateY(-3px);
 }
@@ -413,8 +490,7 @@ h3:hover {
 }
 
 .info-blog i {
-font-size: 15px;
-transition: 0.3s;
+    font-size: 15px;
 }
 
 .info-blog a {
@@ -422,10 +498,8 @@ transition: 0.3s;
     color: var(--dark);
     font-size: 12px;
     font-weight: 300;
-    transition: 0.3s;
 }
 
-.info-blog i:hover,
 .info-blog a:hover {
     color: var(--secondary);
 }
@@ -570,7 +644,7 @@ footer a:hover {
 
 /* Tablet 2.0 */
 @media only screen and (max-width: 769px) {
-    
+
     .flex-bonsai img {
         margin: 0 auto;
         margin-bottom: 20px;
@@ -592,6 +666,7 @@ footer a:hover {
 
 /* Smartphone */
 @media only screen and (max-width: 768px) {
+
     .col-1,
     .col-2,
     .col-3,
@@ -632,6 +707,4 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width: 320px) {
-    
-}
+@media only screen and (max-width: 320px) {}
