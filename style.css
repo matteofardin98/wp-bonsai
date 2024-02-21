@@ -147,6 +147,7 @@ h2 {
     font-weight: 700;
     color: var(--dark);
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -156,6 +157,7 @@ h3 {
     text-transform: uppercase;
     transition: 0.3s;
     transform: translateY(0);
+    margin-bottom: 20px;
 }
 
 .blog h3 {
@@ -195,6 +197,7 @@ p {
     word-spacing: 1px;
     letter-spacing: 1px;
     line-height: 25px;
+    margin-bottom: 20px;
 }
 
 strong {
@@ -218,7 +221,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary);
+    color: var(--dark);
 }
 
 ul {
@@ -582,6 +585,41 @@ nav li a:hover {
     transform: translateY(-3px);
 }
 
+/* Single */
+.caption {
+    padding: 15px 0
+}
+
+.caption span {
+    font-size: 14px;
+    color: var(--dark);
+    margin-right: 30px;
+}
+
+.caption span a:hover {
+    color: var(--dark);
+}
+
+.line-single {
+    width: auto;
+    height: 1px;
+    background-color: var(--primary);
+    margin: 30px 0;
+}
+
+
+.flex-categorie-tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-categorie-tag span {
+    display: block;
+}
+
+.flex-categorie-tag span a {
+    margin-right: 10px;
+}
 
 /* 404 */
 .error {
@@ -661,6 +699,15 @@ footer a:hover {
 
     .flex-card:last-child {
         margin-bottom: 0;
+    }
+
+    .caption span {
+        display: block;
+    }
+
+    .caption {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
